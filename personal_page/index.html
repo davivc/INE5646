@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
     <style>
+        html * {
+            font-family: 'proxima-nova', sans-serif;
+            font-size: 13px;
+        }
+        /* HEADER */
         header {
             display: block;
             text-align: center;
         }
         nav {
-            width: 100%;
             text-align: center;
         }
         ul.nav {
@@ -23,13 +27,71 @@
             float:left;
             list-style-type: none
         }
+        hr {
+            background: #00ab44; 
+            height: 8px;
+            border: none;
+            margin: 10px 0 20px 0;
+        }
+        
         span.block {
             display: block;
         }
         aside {
-            width: 40%;
+            width: 30%;
             float:left;
             height:1000px;
+        }
+        main {
+            width: 70%;
+            float: right;            
+        } 
+        main > section {
+            padding-right: 40px;
+            text-align: justify;
+        }
+        section > div {
+            padding-bottom: 10px;
+        }
+        h3 {
+            background-color: #fff;
+            color: #00ab44;         
+            font-size: 16px;
+            font-weight: 700;
+            padding-bottom: 5px;
+            line-height: 0;
+        }
+        h3.jobtitle {
+            font-size: 17px;
+            font-weight: 400;
+            margin: 0px;
+        }
+        
+        .title {
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            font-style: italic;
+            color: #666666;
+        }
+        .date {
+            line-height: 1.875;
+            font-size: 12px;
+            font-weight: 400;
+            color: #666666;
+        }
+        .description {
+            line-height: 1.5;
+            font-size: 13px;
+            text-align: justify;
+        }
+        ul {
+            margin-left: 30px;
+            padding-left: 0px;
+            position: inherit;
         }
     </style>
 
@@ -47,12 +109,11 @@
         </nav>
     </header>
     <br />
-    <br />
-    <br />
+    <hr>
     <aside>
         <img src="foto.jpeg" width="140px" height="140px">
         <h2>Davi Volney Candido</h2>
-        <h3>Software Developer and Data Scientist</h3>
+        <h3 class="jobtitle">Software Developer and Data Scientist</h3>
         Rua Raimundo Carlos Lopes, 30 Campeche<br />
         Florianopolis, Santa Catarina, Brazil<br />
         CEP 88063088<br />
@@ -65,12 +126,12 @@ applied to coral reefs, big data in science, and MLops.
     </aside>
     <main>
         <section id="education">
-            <h2>EDUCATION</h2>
+            <h3>EDUCATION</h2>
             <div>
-                <span>UNIVERSIDADE FEDERAL DE SANTA CATARINA, Florianópolis</span> -
-                <span>Bachelor of Oceanography</span><br />
-                <span>MARCH 2010 - NOVEMBER 2016 (Conferral date 2017-08-21)</span><br />
-                <span>Relevant CS-related topics studied might include Calculus A, B, and C, Analytic
+                <span class="title">UNIVERSIDADE FEDERAL DE SANTA CATARINA, Florianópolis</span> -
+                <span class="subtitle">Bachelor of Oceanography</span><br />
+                <span class="date">MARCH 2010 - NOVEMBER 2016 (Conferral date 2017-08-21)</span><br />
+                <span class="description">Relevant CS-related topics studied might include Calculus A, B, and C, Analytic
                 Geometry, Oceanographic Data Analysis, and Geomatics. My thesis was titled
                 “DEVELOPMENT AND APPLICATION OF A DATABASE FOR MONITORING
                 REEF ENVIRONMENTS” where I created an app using Python, PostgreSQL,
@@ -78,28 +139,28 @@ applied to coral reefs, big data in science, and MLops.
             </div>
         </section>
         <section id="experience">
-            <h2>EXPERIENCE</h2>
+            <h3>EXPERIENCE</h2>
             <div>
-                <span>Growth.Software, Florianópolis (Brazil)</span> - <span>Data Scientist and Data
+                <span class="title">Growth.Software, Florianópolis (Brazil)</span> - <span class="subtitle">Data Scientist and Data
                 Engineer</span><br />
-                <span>JANUARY 2021 - PRESENT</span>
+                <span class="date">JANUARY 2021 - PRESENT</span>
                 <ul>
                     <li>Dashboards creation, APIs for data retrieval, data integration</li>
                     <li>DevOps (AWS cloud) and Machine Learning Products R&D</li>
                 </ul>
             </div>
             <div>
-                <span>GrowthHackers, Florianópolis (Brazil)</span> - <span>Data Scientist and Data
-            Engineer</span><br />
-            <span>JANUARY 2019 - DECEMBER 2020</span>
-            <ul>
-                <li>Dashboards creation, APIs for data retrieval, data integration</li>
-                <li>DevOps (AWS cloud) and Growth Hacking programming</li>
-            </ul>
+                <span class="title">GrowthHackers, Florianópolis (Brazil)</span> - <span class="subtitle">Data Scientist and Data
+                Engineer</span><br />
+                <span class="date">JANUARY 2019 - DECEMBER 2020</span>
+                <ul>
+                    <li>Dashboards creation, APIs for data retrieval, data integration</li>
+                    <li>DevOps (AWS cloud) and Growth Hacking programming</li>
+                </ul>
             </div>
         </section>
         <section id="publications">
-            <h2>PUBLICATIONS IN PEER-REVIEWED JOURNALS</h2>
+            <h3>PUBLICATIONS IN PEER-REVIEWED JOURNALS</h2>
             <div>
                 <!-- <aside>
                     <p>
@@ -126,7 +187,7 @@ applied to coral reefs, big data in science, and MLops.
             </div>
         </section>
         <section id="certifications">
-            <h2>CERTIFICATIONS</h2>
+            <h3>CERTIFICATIONS</h2>
         </section>
     </main>
     
