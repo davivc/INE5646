@@ -35,7 +35,7 @@ hr {
 aside {
     width: 30%;
     float:left;
-    height:1000px;
+    height:550px;
 }
 main {
     width: 70%;
@@ -51,9 +51,6 @@ section > div {
 }
 
 /* OTHER STRUCTURES */
-/* span.block {
-    display: block;
-} */
 ul {
     margin-left: 30px;
     padding-left: 0px;
@@ -61,6 +58,15 @@ ul {
 }
 
 /* TITLES & TEXTS */
+h1 {
+    font-size: 28px;
+    color: #00ab44; 
+}
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 5px; 
+}
 h3 {
     background-color: #fff;
     color: #00ab44;         
@@ -102,3 +108,16 @@ h4 {
 }
 
 /* FOOTER */
+
+/* DICT PAGE */
+td {
+    border: 1px solid #00ab44;
+    padding: 3px;
+}
+tr td:first-child {
+    width:100px;
+    text-align: center;
+}
+tfoot {
+    text-align: center;
+}
