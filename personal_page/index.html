@@ -4,97 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <style>
-        html * {
-            font-family: 'proxima-nova', sans-serif;
-            font-size: 13px;
-        }
-        /* HEADER */
-        header {
-            display: block;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-        }
-        ul.nav {
-            width: 90%;
-            text-decoration: none;
-        }
-        li.nav {
-            width: 25%;
-            float:left;
-            list-style-type: none
-        }
-        hr {
-            background: #00ab44; 
-            height: 8px;
-            border: none;
-            margin: 10px 0 20px 0;
-        }
-        
-        span.block {
-            display: block;
-        }
-        aside {
-            width: 30%;
-            float:left;
-            height:1000px;
-        }
-        main {
-            width: 70%;
-            float: right;            
-        } 
-        main > section {
-            padding-right: 40px;
-            text-align: justify;
-        }
-        section > div {
-            padding-bottom: 10px;
-        }
-        h3 {
-            background-color: #fff;
-            color: #00ab44;         
-            font-size: 16px;
-            font-weight: 700;
-            padding-bottom: 5px;
-            line-height: 0;
-        }
-        h3.jobtitle {
-            font-size: 17px;
-            font-weight: 400;
-            margin: 0px;
-        }
-        
-        .title {
-            font-size: 14px;
-            font-weight: 700;
-        }
-        .subtitle {
-            font-size: 14px;
-            font-weight: 400;
-            font-style: italic;
-            color: #666666;
-        }
-        .date {
-            line-height: 1.875;
-            font-size: 12px;
-            font-weight: 400;
-            color: #666666;
-        }
-        .description {
-            line-height: 1.5;
-            font-size: 13px;
-            text-align: justify;
-        }
-        ul {
-            margin-left: 30px;
-            padding-left: 0px;
-            position: inherit;
-        }
-    </style>
-
+    <title>CV - Davi Volney Candido</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
@@ -114,15 +25,22 @@
         <img src="foto.jpeg" width="140px" height="140px">
         <h2>Davi Volney Candido</h2>
         <h3 class="jobtitle">Software Developer and Data Scientist</h3>
-        Rua Raimundo Carlos Lopes, 30 Campeche<br />
-        Florianopolis, Santa Catarina, Brazil<br />
-        CEP 88063088<br />
-        +55 48 991902405<br /><br />
+        <p>
+            Rua Raimundo Carlos Lopes, 30 Campeche<br />
+            Florianopolis, Santa Catarina, Brazil<br />
+            CEP 88063088<br />
+            +55 48 991902405
+        </p>
         <a href="mailto:davivc@gmail.com">davivc@gmail.com</a><br />
         <a href="https://www.linkedin.com/in/davivc/">LinkedIn</a> | <a href="https://github.com/davivc">GitHub</a>
-        <h2>RESEARCH INTERESTS</h2>
-            Climate change, machine learning for renewable energy, computer vision
-applied to coral reefs, big data in science, and MLops.
+        <br />
+        <h4>RESEARCH INTERESTS</h4>
+        <p>Climate change, machine learning for renewable energy, computer vision
+applied to coral reefs, big data in science, and MLops.</p>
+        <h4>HTML TAGS DICTIONARY</h4>
+        <p>
+            To check which HTML tags where used in this page click <a href="dict.html">here</a>.
+        </p>
     </aside>
     <main>
         <section id="education">
@@ -162,19 +80,12 @@ applied to coral reefs, big data in science, and MLops.
         <section id="publications">
             <h3>PUBLICATIONS IN PEER-REVIEWED JOURNALS</h2>
             <div>
-                <!-- <aside>
-                    <p>
-                        <span class="block">Marine Pollution Bulletin</span>
-                        <span class="block">NOVEMBER 16th, 2022</span>
-                        <span class="block">https://doi.org/10.1016/j.marpolbul.2022.114354</span>
-                        <span><br />Skills: <br /><br />
-                    </p>
-                </aside> -->
-                <p>
-                    <span class="block">A tool for a race against time: Dispersal simulations to support
-                    ongoing monitoring program of the invasive coral Tubastraea
-                    coccinea</span>                            
-                    <span>Crivellaro MS, Candido DV, Silveira TCL, Fonseca AC, Segal B.</span>
+                <div>
+                    <span class="title">A tool for a race against time: Dispersal simulations to support
+                    ongoing monitoring program of the invasive coral Tubastraea coccinea</span><br />
+                    <span class="subtitle">Marine Pollution Bulletin - <a href="https://doi.org/10.1016/j.marpolbul.2022.114354" target="_blank">https://doi.org/10.1016/j.marpolbul.2022.114354</a></span><br />   
+                    <span class="date">NOVEMBER 16th, 2022</span><br />
+                    <span class="description">Crivellaro MS, Candido DV, Silveira TCL, Fonseca AC, Segal B.</span>
                     <ul>
                         <li> 
                             Collaborated in conceptualization, software (model coding and
@@ -183,11 +94,49 @@ applied to coral reefs, big data in science, and MLops.
                             analysis, and writing.
                         </li>
                     </ul>
-                </p>
+                </div>
+
+                <div>
+                    <span class="title">Large-scale patterns of benthic marine communities in the Brazilian Province</span><br />
+                    <span class="subtitle">PlosONE - <a href="https://doi.org/10.1371/journal.pone.0198452" target="_blank">https://doi.org/10.1371/journal.pone.0198452</a></span><br />                  
+                    <span class="date">JUNE 08th, 2018</span><br />
+                    <span class="description">Aued AW, Smith F, Quimbayo JP, Candido DV, Longo GO, Ferreira CEL, Witman
+                        JD, Floeter SR, Segal B.</span>
+                    <ul>
+                        <li> 
+                            Collaborated in surveys, data collection, data analysis with R
+programming language, formal analysis, and methodology.
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <span class="title">Between-habitat variation of benthic cover, reef fish assemblage and
+                        feeding pressure at the only atoll in South Atlantic: Rocas Atoll, NE
+                        Brazil</span><br />
+                    <span class="subtitle">PlosONE - <a href="https://doi.org/10.1371/journal.pone.0127176" target="_blank">https://doi.org/10.1371/journal.pone.0127176</a></span><br />                  
+                    <span class="date">JUNE 10th, 2015</span><br />
+                    <span class="description">Longo GO, Morais RA, Martins CDL, Mendes TC, Aued AW, Candido DV, de
+                        Oliveira JC, Nunes LT, Fontoura L, Sissini MN, Teschima MM, Silva MB, Ramlov
+                        F, Gouvea LP, Ferreira CEL, Segal B, Horta PA, Floeter SR</span>
+                    <ul>
+                        <li> 
+                            Collaborated in surveys, data collection, and data analysis.
+                        </li>
+                    </ul>
+                </div> 
             </div>
         </section>
         <section id="certifications">
             <h3>CERTIFICATIONS</h2>
+            <div>
+                <span class="title">Executive Data Science</span><br />
+                <span class="subtitle">Johns Hopkins University</span><br />
+                <span class="date">MAY 29th, 2023</span><br />
+                <span class="description"><a href="https://coursera.org/verify/specialization/7SQVBKPMV7AG">Click here to view certificate</a></span>
+Johns Hopkins University
+MAY 29th, 2023
+
         </section>
     </main>
     

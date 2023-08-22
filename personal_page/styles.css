@@ -1,0 +1,104 @@
+/* DOCUMENT */
+html * {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 13px;
+}
+a {
+    color: gray;
+}
+
+/* HEADER */
+header {
+    display: block;
+    text-align: center;
+}
+nav {
+    text-align: center;
+}
+ul.nav {
+    width: 90%;
+    text-decoration: none;
+}
+li.nav {
+    width: 25%;
+    float:left;
+    list-style-type: none
+}
+hr {
+    background: #00ab44; 
+    height: 8px;
+    border: none;
+    margin: 10px 0 20px 0;
+}
+
+/* BODY MAIN STRUCTURE */
+aside {
+    width: 30%;
+    float:left;
+    height:1000px;
+}
+main {
+    width: 70%;
+    float: right;            
+}
+main > section {
+    padding-right: 40px;
+    padding-left: 15px;
+    text-align: justify;
+}
+section > div {
+    padding-bottom: 10px;
+}
+
+/* OTHER STRUCTURES */
+/* span.block {
+    display: block;
+} */
+ul {
+    margin-left: 30px;
+    padding-left: 0px;
+    position: inherit;
+}
+
+/* TITLES & TEXTS */
+h3 {
+    background-color: #fff;
+    color: #00ab44;         
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+h3.jobtitle {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0px;
+}
+h4 {
+    color: #00ab44;         
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+.title {
+    font-size: 14px;
+    font-weight: 700;
+}
+.subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: #666666;
+}
+.date {
+    line-height: 1.875;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666666;
+}
+.description {
+    line-height: 1.5;
+    font-size: 13px;
+    text-align: justify;
+}
+
+/* FOOTER */
