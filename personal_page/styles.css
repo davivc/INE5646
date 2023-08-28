@@ -56,6 +56,9 @@ ul {
     padding-left: 0px;
     position: inherit;
 }
+hr.media-divider {
+    display: none;
+}
 
 /* TITLES & TEXTS */
 h1 {
@@ -120,4 +123,21 @@ tr td:first-child {
 }
 tfoot {
     text-align: center;
+}
+
+@media only screen and (max-width: 540px) {
+    aside {
+        width: 100%;
+        height: auto;        
+        text-align: center;        
+    }
+    main {
+        width: 100%;            
+    }
+    hr.media-divider {
+        display: block;
+    }
+    footer {
+        text-align: center;
+    }
 }
